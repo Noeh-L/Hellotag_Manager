@@ -27,38 +27,46 @@
         </nav>
     </header>
     <main>
-        <aside>
-            <div class="sidebar_select-restau">
-                <label for="restaurant-select">Choisissez un établissement :</label>
-                <select id="restaurant-select" name="restaurants">
-                    <option value=""></option>
-                    <option value="subsidary-Paris">O'Tacos | Paris</option>
-                    <option value="subsidary-Lyon">O'Tacos | Lyon</option>
-                    <option value="subsidary-Marseille">O'Tacos | Marseille</option>
-                </select>
-            </div>
+        <div class="title">
+            <h1>Bienvenue dans votre tableau de bord !</h1>
+            <p>Gérer tous vos Tags en un seul endroit.</p>
+        </div>
 
-            <div class="restaurant-selected">O'Tacos | Paris :</div>
-            <ul>
-                <li class="popo"><i class="fa-regular fa-circle-check"></i>Tag 1<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 2<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 3<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 4<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 5<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 6<i class="fa-solid fa-pen"></i></li>
-                <li><i class="fa-regular fa-circle-check"></i>Tag 7<i class="fa-solid fa-pen"></i></li>
-            </ul>
-        </aside>
-        <section class="dashboard-main">
-            <div class="dashboard-main--title">
-                <h1>Bienvenue dans votre tableau de bord !</h1>
-                <p>Ici, vous pouvez gérer tous vos Tags.</p>
-            </div>
+        <div class="dashboard">
+            <aside>
+                <div class="sidebar_select-restau">
+                    <label for="restaurant-select">Choisissez un établissement :</label>
+                    <select id="restaurant-select" name="restaurants">
+                        <option value=""></option>
+                        <option value="subsidary-Paris">O'Tacos | Paris</option>
+                        <option value="subsidary-Lyon">O'Tacos | Lyon</option>
+                        <option value="subsidary-Marseille">O'Tacos | Marseille</option>
+                    </select>
+                </div>
 
-            <div class="dashboard-main--content">
-                <p>Tag 1</p>
-            </div>
-        </section>
+                <div class="restaurant-selected">O'Tacos | Paris :</div>
+                <ul>
+                    <li class="popo"><i class="fa-regular fa-circle-check"></i>Tag 1<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 2<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 3<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 4<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 5<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 6<i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-regular fa-circle-check"></i>Tag 7<i class="fa-solid fa-pen"></i></li>
+                </ul>
+            </aside>
+            <section class="dashboard-main">
+                <div class="dashboard-main--header">
+                    <h2>Tag 1</h2>
+                    <p>Nombre de place(s) : 4</p>
+                </div>
+
+                <div class="dashboard-main--content">
+                    <!-- Paramètres à insérer ici -->
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
