@@ -130,12 +130,16 @@ aside {
     transition: all 0.2s ease;
 }
 .sidebar_add-tag i {
+    width: 2.5rem;
+    aspect-ratio: 1;
     background-color: white;
-    padding: 0.5rem;
     margin-right: 0.6rem;
     border-radius: 50%;
     font-size: 1.4rem;
     border: #a6cdda 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sidebar_add-tag p {
     font-size: 1.05rem;
