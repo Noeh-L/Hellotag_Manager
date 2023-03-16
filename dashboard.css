@@ -262,10 +262,41 @@ p {
     border-radius: 1.7rem;
     padding: 1.7rem;
 }
-
-.dashboard-main--content p {
-    font-weight: 600;    
+.dashboard-main--content--rs {
+    border-radius: 1.7rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
 }
+
+.rs {
+    min-width: 4.5rem;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow:  10px 10px 20px #e2e2e2, -10px -10px 20px #f3f3f3;
+    transition: all 0.3s ease;
+}
+.rs i {
+    font-size: 3rem;
+    color: #2A3740;
+    transition: all 0.2s ease;
+}
+
+.rs:hover i {
+    color: #85b1bf;
+}
+.rs:active {
+    background: #e1f8ff;
+}
+
 
 
 /* _____________________________________________ */
