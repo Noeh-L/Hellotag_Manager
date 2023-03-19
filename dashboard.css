@@ -297,6 +297,118 @@ p {
     background: #e1f8ff;
 }
 
+        /* --Modal Window-- */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 30rem;
+    height: 22rem;
+    border: #2A3740 solid 1px;
+    border-radius: 2rem;
+    background: #f0f0f0;
+    box-shadow: 3px 7px 12px #b2b2b2;
+}
+
+.closeModal {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.4rem;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.closeModal i {
+    font-size: 2.5rem;
+}
+.closeModal:hover {
+    color: #7b8f9d;
+}
+
+.modal-Header {
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-Header--icon {
+    width: 5rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow:  20px 20px 60px #cbcbcb,
+             -20px -20px 60px #ffffff;
+    margin-bottom: 2.4rem;
+}
+.modal-Header--title {
+    font-size: 1.2rem;
+}
+
+.modal-input {
+    width: 60%;
+    display: flex;
+}
+
+.modal-input-icon {
+    background: #C7E6F0;
+    border: solid 1px #2A3740;
+    border-right: none;
+    height: 2.2rem;
+    aspect-ratio: 1;
+    border-radius: 50% 0 0 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-input-icon i {
+    margin-left: 0.2rem;
+}
+
+.modal-input input {
+    height: 2.2rem;
+    width: 100%;
+    border-radius: 0 100vh 100vh 0;
+    border: solid 1px #2A3740;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 0.7rem;
+    color: #2A3740;
+    font-weight: bold;
+}
+
+.saveButton {
+    background: #2A3740;
+    border-radius: 100vh;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 1rem;
+    transition: all ease 0.15s;
+}
+.saveButton:hover {
+    background: #7b8f9d;
+}
+.saveButton:active {
+    background: #607381;
+}
 
 
 /* _____________________________________________ */
