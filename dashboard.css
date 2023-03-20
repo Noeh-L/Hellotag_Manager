@@ -264,20 +264,20 @@ p {
 }
 .dashboard-main--content--rs {
     border-radius: 1.7rem;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:end;
 }
 
 .rs {
-    min-width: 4.5rem;
-    width: 100%;
-    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 5rem;
+    aspect-ratio: 1;
+    margin: 1rem;
     background: transparent;
     border-radius: 1rem;
     cursor: pointer;
@@ -538,5 +538,17 @@ footer p {
     nav a {
         color: #fff;
         padding: 0.3rem 1rem;
+    }
+    .modal {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 90%;
+        height: 22rem;
+        border: #2A3740 solid 1px;
+        border-radius: 2rem;
+        background: #f0f0f0;
+        box-shadow: 3px 7px 12px #b2b2b2;
     }
 }
