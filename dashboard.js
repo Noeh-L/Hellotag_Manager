@@ -8,12 +8,17 @@ for (let i = 0; i < socialMediaButtons.length; i++) {
     socialMediaButtons[i].addEventListener("click", (e) => {
         modalWindow.style.display = "flex";
         
-        const button = e.target.closest(".rs"); //POURQUOI CA MARCHE ?
-        if (button) {
-            modalWindow.style.display = "flex";
-            console.log(button.id);
-            modalTitle.innerHTML = button.id
-          }
+        const socialMediaClicked = e.target.closest(".rs"); // utilisation de closest pour transmettre l'evenement au child (icone <i>)
+        const socialMediaEmailIcon = socialMediaClicked.querySelector(".fa-envelope"); // exception pour pouvoir afficher l'icone enveloppe qui n'a pas les mêmes classe que le reste (fa-regular au lieu de fa-brands)
+
+        if (socialMediaClicked && !socialMediaEmailIcon) {
+            modalIcon.innerHTML = `<i class="fa-brands fa-${socialMediaClicked.id}"></>`
+            modalTitle.innerHTML = socialMediaClicked.dataset.social
+        } else {
+            modalIcon.innerHTML = `<i class="fa-regular fa-${socialMediaClicked.id}"></>`
+            modalTitle.innerHTML = socialMediaClicked.dataset.social
+        }
+
     });
 }
 

@@ -351,10 +351,15 @@ p {
     cursor: default;
     box-shadow:  20px 20px 60px #cbcbcb,
              -20px -20px 60px #ffffff;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1rem;
+}
+.modal-Header--icon i {
+    font-size: 3rem;
 }
 .modal-Header--title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+
 }
 
 .modal-input {
